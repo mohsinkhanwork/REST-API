@@ -24,6 +24,7 @@ class BaseController extends Controller
     public function sendError($error, $errorMessages = [], $code = 404)
     {
         $response = [
+            
             'success' => false,
             'message' => $error,
         ];

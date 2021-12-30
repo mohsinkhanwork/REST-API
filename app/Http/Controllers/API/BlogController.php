@@ -64,7 +64,7 @@ class BlogController extends BaseController
         return $this->sendResponse(new BlogResource($blog), 'Post updated.');
     }
 
-     public function destroy(Blog $blog)
+    public function destroy(Blog $blog)
     {
         $blog->delete();
         
